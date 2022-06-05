@@ -9,7 +9,7 @@ JRE 9.0.4 download from link, and put package in archive to item editor folder. 
 
 # English description to SPT-AKI Item Editor test version
 
-  SPT-AKI Item Editor is designed to edit server data, in this case location settings, items and global server settings. But there is a nuance, since there is no multi-thread optimization average (in a month or two I will bring multi-thread and optimization for weak and strong computers into the program).  
+  SPT-AKI Item Editor is designed to edit server data, in this case location settings, items and global server settings. But there is a nuance, since without thread support in application functions (in a month or two, I will bring thread support in application fucntion and optimization for weak and strong computers into the program).  
   The advantages of the editor are that there is a convenient search by groups, which allows you not to remember the name of the item looking for it for about 10 minutes. The disadvantages are that you cannot change the source of the items.json game, since the editor is string-bound. A line will be added somewhere, everything will break. So it goes. But it will be fixed in version 1.
   
   Importantly, the editor itself is located under the open menu tab. Therefore, it must be hidden after selecting an item, or immediately if locations and global settings are being edited.
@@ -26,12 +26,12 @@ JRE 9.0.4 download from link, and put package in archive to item editor folder. 
 
   Requirements:
 * [Be sure to download JRE version 9.0.4 to the editor directory](https://www.dropbox.com/sh/z7qg6os9w2c5qv2/AADNt5uSKr5c5kyK9NPTuLq5a?dl=0) because the application is written in JAVA, and if it is not on the computer without it, the program does not work. You can try the JAVA versions above, but I did not check.
-* Due to the lack of multithreading, processors from i7 or powerful i5, other processors at your own peril and risk
+* Due to the lack of thread support, processors from i7 or powerful i5, other processors at your own peril and risk
 * It is advisable not to press several buttons quickly, since there is no blocking of flows yet. The start marker will be a faded button
 
   Current issues:
 * Since the program is a test and for a device to work, the code is there, of course, at 5k (then I will fix it in a month because this is the previous version, but stable)
-* No multithreading
+* No thread support in application functions
 * Limited features in the test version of the preset creation system
 * Requirements for matching source strings items.json and the current items.json of your game
 * There are suspicions of memory consumption, but if the program is used for less than 12 hours, then there is no problem
@@ -39,14 +39,14 @@ JRE 9.0.4 download from link, and put package in archive to item editor folder. 
   
   
   Further plans for the development of the program:
-* Introduce multi-threading, refine the item preset system and the item reading system, make a system for adding strings to the item (as an example, available rounds for the weapon magazine)
+* Introduce thread support, refine the item preset system and the item reading system, make a system for adding strings to the item (as an example, available rounds for the weapon magazine)
 * In v2, make it possible to work on all versions of SPT-AKI (the developments are already there), refinement of the system for viewing characteristics and data
 * In v3, do a redesign of the interface
 * (probably will not be) In v4, make settings system for bots file and loot on maps
 
 # Описание программы SPT-AKI Item Editor тестовый образец
 
-  SPT-AKI Item Editor предназначен для того, чтобы редактировать данные сервера, в данном случае настроек локаций, предметов и глобальных настроек сервера. Но есть нюанс, поскольку отсутствует многопоток оптимизация средняя (через месяц-два завезу в прогу многопоток и оптимизацию для слабых и сильных компьютеров).
+  SPT-AKI Item Editor предназначен для того, чтобы редактировать данные сервера, в данном случае настроек локаций, предметов и глобальных настроек сервера. Но есть нюанс, поскольку отсутствует поддержка потоковой работы функций, оптимизация средняя (через месяц-два завезу в прогу поддержку потока и оптимизацию для слабых и сильных компьютеров).
   Плюсы редактора в том что есть удобный поиск по группам что позволяет не вспоминать название предмета ищя его минут 10. Минусы в том что нельзя изменять исходник игры items.json, поскольку редактор привязан к строкам. Добавится где нибудь строка, все поломается. Такие дела. Но в версии 1 будет исправлено.
 
   Важно, сам редактор находится под открытой вкладкой меню. Поэтому её нужно скрыть после выбора предмета, либо сразу если редактируются локации и глобальные настройки
@@ -68,7 +68,7 @@ JRE 9.0.4 download from link, and put package in archive to item editor folder. 
 
   Текущие проблемы:
 * Поскольку программа тестовая и для устройства на работу, код там конечно, на 5ку (потом исправлю через месяц потому, что это версия предыдущая, но стабильная)
-* Отсутствие многопотока
+* Отсутствие потоковой работы функций приложения
 * Ограниченность возможностей в тестовой версии системы создания пресета
 * Требования к соответвию строк исходника items.json и текущему items.json вашей игры
 * Есть подозрения на потребление пямяти, но если программа используется менее 12 часов, то проблем нет
