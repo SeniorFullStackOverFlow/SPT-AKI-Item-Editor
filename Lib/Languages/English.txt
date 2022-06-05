@@ -1,0 +1,211 @@
+//Settings
+//Модуль смены языка
+Change language*- private Label LanguageLabel;
+//Модуль настройки анимации всплывающих панелей
+Enable/Disable panel animation*- private Label PanelAnimationLabel;
+Menu animation*- private RadioButton Menuanimationradiobutton;
+Items editor panel animation*- private RadioButton Itemseditornradiobutton;
+Global value panel animation*- private RadioButton Globalvalueradiobutton;
+Items stats panel animation*- private RadioButton Itemsstatsradiobutton;
+//Начало модуля путей к файлам
+Path to game directory*- private Label PathToGame;
+Path to items file*- private Label PathToItems;
+Path to globalvalues file*- private Label PathToGlobals;
+Path to save/backup directory*- private Label PathToDirectiory;
+Search*- private Button gamedirectorysearch;
+Search*- private Button itemsfieldsearch;
+Search*- private Button globalvaluessearch;
+Search*- private Button backupdirectorysearch;
+//Начало модуля подбора файла
+Chose copy of items file*- private Label ChoseItem;
+Make new file*- private Button makenewitemsfile;
+Delete file*- private Button deleteitemsfile;
+Save new file*- private Button Applybutton;
+Cancel*- private Button Closebutton;
+Old file characteristics to new*- private RadioButton Copyoldfiletonew;
+Chose item category*- private Label CategoryItemLabel
+Restore game file*- private Label CategoryItemRestoreLabel
+Restore*- private Button CategoryItemRestoreButton
+//Кнопка выхода
+OK*- private Button Exitkey;
+//Ошибки модуля путей к файлам
+Chose file*- common error directorysearch;
+Chose the location of save files/backups*- title backupdirectorysearchaction
+save*- password backupdirectorysearchaction
+Chose right directory with "save" folder*- modul error backupdirectorysearchaction
+Chose game folder*- title gamedirectorysearchaction
+SPT AKI*- password gamedirectorysearchaction
+Chose right directory with "SPT AKI" folder*- modul error gamedirectorysearchaction
+Find the location of globals.json*- title globalvaluessearchaction
+globals.json*- password globalvaluessearchaction
+Chose globals.json file*- modul error globalvaluessearchaction
+Find the location of items.json*- title itemsfieldsearchaction
+items.json*- password itemsfieldsearchaction
+Chose items.json file*- modul error itemsfieldsearchaction
+//Ошибки модуля подбора файла
+Delete chosed file?*- delete file warning deleteitemsfileaction
+Chose file to delete*- file not exist error deleteitemsfileaction
+This file exist, rewrite file?*- file exist warning makenewitemsfileaction
+Wrong file name*- file name error makenewitemsfileaction
+Enter file name*- textfield length error makenewitemsfileaction
+Restore game file?*- restore warning CategoryItemRestoreLabel
+//
+
+//MainProgramm
+//Всплывающие панели и главные кнопки
+Item editor*- private TitledPane Itemvalues;
+Second editor*- private TitledPane SecondEditor;
+Globals editor*- private TitledPane Globalseditor;
+Menu*- private TitledPane Menutitledpane;
+Settings*- private Button Settingsbutton;
+About program*- private Button Aboutprogrambutton;
+Change log*- private Button Changelogbutton;
+Items chose & make preset*- private TitledPane Itemseditortitledpane;
+Work on preset*- Presetstitledpane
+//Панель при нажатии кнопки SavePreset
+Preset name*- private Label NameLabel;
+Save*- private Button SavePresetOk;
+Cancel*- private Button SavePresetCancel;
+//Панель при нажатии Change preset
+Choise Preset to Change*- private  Label ChoiceLabel;
+Preset name:*- private  Label ChngNameLabel;
+Preset Description:*- private  Label ChngDescriptionLabel;
+Load preset to change*- private Button ChangePresetLoad;
+Close*- private Button ChangePresetClose;
+Rewrite preset*- private Button ChangePresetRewrite;
+Cancel*- private Button ChangePresetRewriteCancel;
+//Модуль Load Preset
+WrkMode*- private RadioButton LoadPresetWrkMode;
+Lines/Array in item*- private RadioButton LoadPresetLinesArray;
+Add/Remove*- private Button LoadPresetAddRemove;
+Delete preset*- private Button LoadPresetDeletePreset;
+Viev Preset*- private Button LoadPresetViewPreset;
+Load items*- private Button LoadPresetLoadItems;
+Load Lines*- private Button LoadPresetLoadLinesInItem;
+Load Presets*- private Button LoadPresetLoadButton;
+Close pane*- private Button LoadPresetClosePane;
+Available presets*- private Label LoadAvailableLabel;
+Added presets*- private Label LoadAddedLabel;
+Description preset*- private Label LoadDescriptionLabel;
+Preset*- private Label LoadPresetChosedPresetLabel;
+Item on preset*- private Label LoadPresetChosedItemLabel;
+View item*- private Label LoadPresetNameItemLines;
+//Модуль работы с прессетами
+Don't registrate*- private Button itemsdontregistrate;
+Make preset*- private Button MakePresetButton;
+SavePresset*- private Button SavePresset;
+Search*- private Button SeachPressetItem;
+Cancel*- private Button PresetCancel;
+Ok*- private Button PresetOk;
+View items/lines*- private RadioButton PresetListWorkMode;
+Line/Arrays mode*- private RadioButton ArrayMode;
+Add array*- private Button MassiveToChange;
+Add lines*- Button AddToList;
+Clear selection*- Button ClearPresetSelection;
+Change item*- private Button ChangeItemOnPreset;
+Registrate changes without save*- private Button itemsregistrate;
+Load preset*- private Button Loadpresetbutton;
+Change preset*- private Button Changepresetbutton;
+RemoveLines*- private Button RemoveLines;
+AddNewItem*- private Button AddNewItem;
+DeleteItem*- private Button DeleteItem;
+ClosePreset*- private Button CancelPreset;
+Choise type of item*- Label ChoisetypeofitemLabel;
+Add second type*- Label SecondtypeLabel;
+Choise items tag*- Label ChoiseitemsLabel;
+Select or enter item*- Label EnteritemLabel;
+//Модуль работы со строками в объекте
+Save in backup*- private Button Saveinbackup;
+Upload to game*- private Button Uploadtogame;
+Save in buffer*- private Button GlobalSaveInBuffer;
+Don't registrate*- private Button Globaldontregistrate;
+Set previous value*- private Button Resetchangesaction;
+Item/Lines*- private RadioButton ItemWorkChangeWorkMode;
+//Первая панель с информацией о загруженном предмета
+Previous value*- private Label ItemWorkPreviousvalue;
+Main id*- private Label ItemWorkIdLabel;
+Game name*- private Label ItemWorkNameLabel;
+Parrent*- private Label ItemWorkParrentLabel;
+Link*- private Label ItemWorkLinkLabel;
+//Вторая панель для работы с добавлением и уборкой линий
+Add lines*- private Button ItemWorkAddLines;
+Add array lines*- private Button ItemWorkAddMassiveLines;
+RemoveLines*- private Button ItemWorkRemoveLines;
+Reset lines*- private Button ItemWorkResetNumberOfLines;
+number of lines*- private TextField ItemWorkChangeNumberOfLines;
+//Третья панель для работы с добавлением нескольких заданных линий
+Ok*- private Button ItemWorkOkMassiveLineAdd;
+Cancel*- private Button ItemWorkCancelMassiveLineAdd;
+//Модуль работы с предметами
+Locations Editor*- TitledPane globalLocationsEditor
+Set the number of bots in locations*- Button edtrSetBtsNmr
+//Ошибки модуля работы с прессетами
+No items found for the selected tags*- Items array error FindFile fabric module
+Select tags before match items*- Zero tags error Choiseitemsaction
+Select tags before view selected tags*- Zero tags error Choiseitemsaction
+Select tags before change tag*- Zero tags error Choiseitemsaction
+Select tags before delete tag*- Zero tags error Choiseitemsaction
+Select tags before delete all tags*- Zero tags error Choiseitemsaction
+This category is empty, select another*- List viev size error chosingglobalclicked
+Stop creating a preset?*- Don't make preset warning CancelPresetAction
+This file alredy exists, rewrite file?*- File exist save preset warning SavePresetOkAction
+Add name to file before save*- File name length save preset error SavePresetOkAction
+//Ошибки модуля LoadPreset
+Loaded presets not equals number of files, restart programm*- Load preset not equals listoffiles error Loadpresetbuttonaction
+Chose file to add/remove*- File not chosen error LoadPresetAddRemoveAction
+Choose preset in list to delete*- File not chosen to delete error LoadPresetDeletePresetAction
+This preset load to file, unload file before delete?*- Unload deleted file warning LoadPresetDeletePresetAction
+Choose preset in list to view*- File not chosen to delete error LoadPresetViewPresetAction
+File's not chosen to load/unload*- File's not chosen to load/unload error LoadPresetLoadButtonAction
+Chose 1 preset to view items*- Preset to view not chosen error LoadPresetLoadItemsAction
+Chose item to load lines*-Item not chosen to load lines error LoadPresetLoadLinesInItemAction
+//Ошибки модуля ChangePreset
+Rewrite chosed preset?*- Rewrite warning ChangePresetRewriteAction
+File not found*- Rewrite file not found error ChangePresetRewriteAction
+Stop creating a preset change*- Close change preset warning ChangePresetRewriteCancelAction
+Select second type before adding item to preset*- Second type error SeachPressetItemAction
+Select tags before adding item to preset*- Tags error SeachPressetItemAction
+Select item before adding item to preset*- Item error SeachPressetItemAction
+This alredy added to preset*- Aredy added error SeachPressetItemAction
+Select an operation mode before adding an object to a preset*- Workmode not chosen error SeachPressetItemAction
+Clear selection in list?*- Clear selection warning ClearPresetSelectionAction
+This line alredy added*- Line add exist error AddToListAction
+Select a line in the list before adding to preset*- Line chosed error AddToListAction
+Chose line in list before remove*- Line chosed error RemoveLinesAction
+Chosed Array(s) alredy added*- Array add error MassiveToChangeAction
+The selected line does not contain the beginning of the array*- Line array begin error MassiveToChangeAction
+Line not selected, select line with { or [ to add array*- Line selected error MassiveToChangeAction
+Line not selected, select line with item*- Line selected error ChangeItemOnPresetAction
+Delete selected item?*- Delete item warning DeleteItemAction
+Item(s) to delete don't selected*- Delete item error DeleteItemAction
+Preset to change not selected*- Preset not selected error ChangePresetLoadAction
+//Ошибки модуля изменения строк в объекте
+Items list is empty, chose another item*- Items list empty error Saveinbackuponaction
+Globals list is empty, chose another category*- Globals list empty error Saveinbackuponaction
+Open editor to save changes*- Path error Saveinbackuponaction
+Open editor to overwrite program file to game file*- Path error Uploadtogameinaction
+File game not exist, file cannot upload to game items.json*- File not exist error Uploadtogameinaction
+Open editor to undo changes*- Path error Globaldontregistrateaction
+Open editor to save changes to the editor lines buffer*- Path error GlobalSaveInBufferAction
+Select line in editor to undo changes*- Line select error Globalresetchangesaction
+//Ошибки модуля для добавление и убирания строк в изменение предмета
+Open editor to add lines to list*- Path error ItemWorkAddLinesAction
+Open editor to add lines array to list*- Path error ItemWorkOkMassiveLineAddAction
+Remove lines in list?*- Remove line warning ItemWorkRemoveLinesAction
+Open editor to remove lines array in list*- Path error ItemWorkRemoveLinesAction
+Return deleted strings?*- Remove line warning ItemWorkResetNumberOfLinesAction
+Open editor to return deleted lines in list*- Path error ItemWorkResetNumberOfLinesAction
+//Ошибки фабрик и универсальных модулей
+Select a number greater than zero*- Add number error AddOrRemoveLines
+Open editor to add lines to list*- Path error AddOrRemoveLines
+Write line(s) before add to list*- Add number error AddOrRemoveLines
+Open editor to add lines array to list*- Path error AddOrRemoveLines
+Chose line(s) in editor list before remove*- Remove line(s) number error AddOrRemoveLines
+Chose line(s) in editor list before undo changes*- Reset line(s) number error AddOrRemoveLines
+The list in the editor is empty, you cannot save it to a file*- List empty error SaveListChangesInFile
+Open the editor to save changes to the file*- Path error SaveListChangesInFile
+//Ошибки приложения
+Cancel game catalog selection?*- Find catalog warning
+//
+
+//Write&ReadModules

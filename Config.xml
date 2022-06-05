@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>D:\AAAAAAAAAAAAAAAAAAAAAAAAAAA\SPT_AKI_item_editor\SPT-AKI item editor.jar</jar>
+  <outfile>D:\AAAAAAAAAAAAAAAAAAAAAAAAAAA\SPT_AKI_item_editor\SPT-AKI item editor.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir></chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>D:\AAAAAAAAAAAAAAAAAAAAAAAAAAA\SPT_AKI_item_editor\Lib\Images\16428480741900.ico</icon>
+  <jre>
+    <path>jre9.0.4\bin\javaw.exe</path>
+    <bundledJre64Bit>false</bundledJre64Bit>
+    <bundledJreAsFallback>false</bundledJreAsFallback>
+    <minVersion>9.0.0</minVersion>
+    <maxVersion>9.0.4</maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <runtimeBits>64/32</runtimeBits>
+  </jre>
+  <versionInfo>
+    <fileVersion>0.0.0.0</fileVersion>
+    <txtFileVersion>v0.0</txtFileVersion>
+    <fileDescription>SPT-AKI item editor</fileDescription>
+    <copyright>777</copyright>
+    <productVersion>0.0.0.0</productVersion>
+    <txtProductVersion>v0.0</txtProductVersion>
+    <productName>Item editor</productName>
+    <companyName>s</companyName>
+    <internalName>fa</internalName>
+    <originalFilename>SPT-AKI item edtior.exe</originalFilename>
+    <trademarks>s</trademarks>
+    <language>ENGLISH_US</language>
+  </versionInfo>
+  <messages>
+    <startupErr>An error occurred while starting the application.</startupErr>
+    <bundledJreErr>This application requires a Java Runtime Environment.</bundledJreErr>
+    <jreVersionErr>This application requires a Java Runtime Environment</jreVersionErr>
+    <launcherErr>The registry refers to a nonexistent Java Runtime Environment installation or the runtime is corrupted.</launcherErr>
+    <instanceAlreadyExistsMsg>An application instance is already running.</instanceAlreadyExistsMsg>
+  </messages>
+</launch4jConfig>
