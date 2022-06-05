@@ -1,0 +1,211 @@
+//Settings
+//Модуль смены языка
+Смена языка*- Label LanguageLabel;
+//Модуль настройки анимации всплывающих панелей
+Вкл./Выкл. анимацию панелей*- Label PanelAnimationLabel;
+Анимация меню*- RadioButton Menuanimationradiobutton;
+Анимация панели редактора предмета*- RadioButton Itemseditornradiobutton;
+Анимация панели Глоб. значений*- RadioButton Globalvalueradiobutton;
+Анимация панели Характ. предметов*- RadioButton Itemsstatsradiobutton;
+//Начало модуля путей к файлам
+Путь к папке игры*- Label PathToGame;
+Путь к файлу items.json*- Label PathToItems;
+Путь к файлу globals.json*- Label PathToGlobals;
+Путь к папке программы save*- Label PathToDirectiory;
+Поиск*- Button gamedirectorysearch;
+Поиск*- Button itemsfieldsearch;
+Поиск*- Button globalvaluessearch;
+Поиск*- Button backupdirectorysearch;
+//Начало модуля подбора файла
+Выберите файл*- Label ChoseItem;
+Создать файл*- Button makenewitemsfile;
+Удалить*- Button deleteitemsfile;
+Сохранить*- Button Applybutton;
+Отмена*- Button Closebutton;
+Cкопировать предыдущий файл в новый*- RadioButton Copyoldfiletonew;
+Выбрать группу предмета*- private Label CategoryItemLabel
+Востановить исх. файл игры*- private Label CategoryItemRestoreLabel
+Востановить*- private Button CategoryItemRestoreButton
+//Кнопка выхода
+Ок*- Button Exitkey;
+//Ошибки модуля путей к файлам
+Путь не указан*- common error directorysearch;
+Укажите путь к папки save в папке программы*- title backupdirectorysearchaction
+save*- password backupdirectorysearchaction
+Укажите правильный путь до папки save*- modul error backupdirectorysearchaction
+Укажите путь к основной папке игры*- title gamedirectorysearchaction
+SPT AKI*- password gamedirectorysearchaction
+Укажите правильный путь до папки игры SPT AKI*- modul error gamedirectorysearchaction
+Укажите путь до файла globals.json в папке игры*- title globalvaluessearchaction
+globals.json*- password globalvaluessearchaction
+Выберите файл globals.json*- modul error globalvaluessearchaction
+Укажите путь до файла items.json в папке игры*- title itemsfieldsearchaction
+items.json*- password itemsfieldsearchaction
+Выберите файл items.json*- modul error itemsfieldsearchaction
+//Ошибки модуля подбора файла
+Удалить выбранный файл?*- delete file warning deleteitemsfileaction
+Выберите файл для удаления*- file not exist error deleteitemsfileaction
+Файл сушествует, перезаписать файл?*- file exist warning makenewitemsfileaction
+Неправильное имя файла*- file name error makenewitemsfileaction
+Введите имя файла*- textfield length error makenewitemsfileaction
+Востановить исходный файл игры?*- restore warning CategoryItemRestoreLabel
+//
+
+//MainProgramm
+//Всплывающие панели и главные кнопки
+Редактор предмета*- TitledPane Itemvalues;
+Дополнительный редактор*- TitledPane SecondEditor;
+Редактор Globals.json*- TitledPane Globalseditor;
+Меню*- TitledPane Menutitledpane;
+Настройки*- Button Settingsbutton;
+О программе*- Button Aboutprogrambutton;
+Внес. изм.*- Button Changelogbutton;
+Выбор предмета & создание пресета*- TitledPane Itemseditortitledpane;
+Работа с пресетами*- Presetstitledpane
+//Панель при нажатии кнопки SavePreset
+Имя пресета*- Label NameLabel;
+Сохранить*- Button SavePresetOk;
+Отмена*- Button SavePresetCancel;
+//Панель при нажатии Change preset
+Пресет для замены*-  Label ChoiceLabel;
+Имя пресета:*-  Label ChngNameLabel;
+Описание пресета:*-  Label ChngDescriptionLabel;
+Загрузка пресета для замены*- Button ChangePresetLoad;
+Отмена*- Button ChangePresetClose;
+Перезапись пресета*- Button ChangePresetRewrite;
+Отмена*- Button ChangePresetRewriteCancel;
+//Модуль Load Preset
+Реж. работы*- RadioButton LoadPresetWrkMode;
+Линии/Массив в предмете*- RadioButton LoadPresetLinesArray;
+Загр./Выгруз.*- Button LoadPresetAddRemove;
+Удал. пресет*- Button LoadPresetDeletePreset;
+Просмотр*- Button LoadPresetViewPreset;
+Загр. предметы*- Button LoadPresetLoadItems;
+Загр. линии*- Button LoadPresetLoadLinesInItem;
+Загр. пресет*- Button LoadPresetLoadButton;
+Закр. панель*- Button LoadPresetClosePane;
+Доступные пресеты*- Label LoadAvailableLabel;
+Добавленные пресеты*- Label LoadAddedLabel;
+Описание пресета*- Label LoadDescriptionLabel;
+Пресет*- Label LoadPresetLabel;
+Предметы из пресета*- Label LoadPresetItemLabel;
+Имя предмета*- Label LoadPresetItemLines;
+//Модуль работы с прессетами
+Востановить линии*- Button itemsdontregistrate;
+Созд. пресет*- Button MakePresetButton;
+Сохранить пресет*- Button SavePresset;
+Поиск*- Button SeachPressetItem;
+Отмена*- Button PresetCancel;
+Ок*- Button PresetOk;
+Отобр. Предметы/Линии*- RadioButton PresetListWorkMode;
+Линии/Массивы*- RadioButton ArrayMode;
+Добав. Массив*- Button MassiveToChange;
+Добавить линии*- Button AddToList;
+Снять выделение*- Button ClearPresetSelection;
+Замена предм.*- Button ChangeItemOnPreset;
+Сохранить изменения в буфер*- Button itemsregistrate;
+Загрузить пресеты*- Button Loadpresetbutton;
+Изменить пресет*- Button Changepresetbutton;
+Удалить линии*- Button RemoveLines;
+Добавить предм.*- Button AddNewItem;
+Удалить предм.*- Button DeleteItem;
+Закрыть пресет*- Button CancelPreset;
+Выбор типа*- Label ChoisetypeofitemLabel;
+Выбор подтипа*- Label SecondtypeLabel;
+Выбор тегов*- Label ChoiseitemsLabel;
+Выбор предмета*- Label EnteritemLabel;
+//Модуль работы со строками в объекте
+Сохранить в бэкап*- Button Saveinbackup;
+Сохранить в игру*- Button Uploadtogame;
+Сохранить в буфф*- Button GlobalSaveInBuffer;
+Не регистрировать*- Button Globaldontregistrate;
+Востановить знач.*- Button Resetchangesaction;
+Предмет/Линии*- RadioButton ItemWorkChangeWorkMode;
+//Первая панель с информацией о загруженном предмета
+Пред. значение*- Label ItemWorkPreviousvalue;
+Id*- Label ItemWorkIdLabel;
+Имя*- Label ItemWorkNameLabel;
+Parrent*- Label ItemWorkParrentLabel;
+Ссылка*- Label ItemWorkLinkLabel;
+//Вторая панель для работы с добавлением и уборкой линий
+Добав. линии*- Button ItemWorkAddLines;
+Добав. массив*- Button ItemWorkAddMassiveLines;
+Удалить линии*- Button ItemWorkRemoveLines;
+Востаносить линии*- Button ItemWorkResetNumberOfLines;
+Число линий*- TextField ItemWorkChangeNumberOfLines;
+//Третья панель для работы с добавлением нескольких заданных линий
+Ок*- Button ItemWorkOkMassiveLineAdd;
+Отмена*- Button ItemWorkCancelMassiveLineAdd;
+//Модуль работы с предметами
+Редактор параметров локации*- TitledPane globalLocationsEditor
+Распределить кол-во ботов по сложностям игры*- Button edtrSetBtsNmr
+//Ошибки модуля работы с прессетами
+Предметы по подобранным характеристикам не найдены*- Items array error FindFile fabric module
+Введите теги перед подбором предметов*- Zero tags error Choiseitemsaction
+Нет тегов для просмотра*- Zero tags error Choiseitemsaction
+Нет тегов для изменения*- Zero tags error Choiseitemsaction
+Нет тегов для удалением*- Zero tags error Choiseitemsaction
+Нет тегов для очистки*- Zero tags error Choiseitemsaction
+Категория пуста и в ней нет предметов, выберите другую*- List viev size error chosingglobalclicked
+Прекратить создание пресета?*- Don't make preset warning CancelPresetAction
+Файл уже существует, перезаписать файл?*- File exist save preset warning SavePresetOkAction
+Введите имя перед сохранением пресета*- File name length save preset error SavePresetOkAction
+//Ошибки модуля LoadPreset
+Несответствие загруженных и доступных пресетов, перезагрузите программу*- Load preset not equals listoffiles error Loadpresetbuttonaction
+Выберите файл для добавления или удаления*- File not chosen error LoadPresetAddRemoveAction
+Выберите пресет в списке для удаления*- File not chosen to delete error LoadPresetDeletePresetAction
+Выбранный пресет загружен в файл игры, выгрузить перед удалением?*- Unload deleted file warning LoadPresetDeletePresetAction
+Выберите пресет в списке для просмотра*- File not chosen to delete error LoadPresetViewPresetAction
+Не выбран файл для загрузки либо выгрузки*- File's not chosen to load/unload error LoadPresetLoadButtonAction
+Выберите 1 пресет для просмотра предметов*- Preset to view not chosen error LoadPresetLoadItemsAction
+Выберите предмет для загрузке линий*-Item not chosen to load lines error LoadPresetLoadLinesInItemAction
+//Ошибки модуля ChangePreset
+Перезаписать выбранный пресет?*- Rewrite warning ChangePresetRewriteAction
+Файл не найден*- Rewrite file not found error ChangePresetRewriteAction
+Прекратить подготовку перезаписи пресета*- Close change preset warning ChangePresetRewriteCancelAction
+Выберите вторую категорию перед добавлением предмета в пресет*- Second type error SeachPressetItemAction
+Выберите теги перед добавлением предмета в пресет*- Tags error SeachPressetItemAction
+Выберите предмет перед добавлением в пресет*- Item error SeachPressetItemAction
+Выбранное уже добавлено в пресет*- Aredy added error SeachPressetItemAction
+Не выбран режим для добавления в пресет*- Workmode not chosen error SeachPressetItemAction
+Снять выделение строк в списке?*- Clear selection warning ClearPresetSelectionAction
+Эта строка уже добавлена*- Line add exist error AddToListAction
+Выберите строку в листе для добавления в пресет*- Line chosed error AddToListAction
+Выберите строку в списке перед удалением*- Line chosed error RemoveLinesAction
+Выбранные Строки уже добавлены*- Array add error MassiveToChangeAction
+Выбранная строка это не начало массива характеристик*- Line array begin error MassiveToChangeAction
+Строка должна содержать { или [ для добавления в массив*- Line selected error MassiveToChangeAction
+Строка не содержит предмет для изменения*- Line selected error ChangeItemOnPresetAction
+Удалить выбранный предмет?*- Delete item warning DeleteItemAction
+Предмет(ы) для удаления не выбраны*- Delete item error DeleteItemAction
+Не выбран пресет для изменения*- Preset not selected error ChangePresetLoadAction
+//Ошибки модуля изменения строк в объекте
+Нет строк в списке, выберите другой предмет*- Items list empty error Saveinbackuponaction
+Нет строк в категории, выберите другую*- Globals list empty error Saveinbackuponaction
+Откройте редактор для сохранения изменений*- Path error Saveinbackuponaction
+Откройте редактор для сохранения выбранного файла в игровой*- Path error Uploadtogameinaction
+Файла игры не существует, загрузка в items.json не возможна*- File not exist error Uploadtogameinaction
+Откройте редактор для отката изменений*- Path error Globaldontregistrateaction
+Откройте редактор для сохранения строк в буфер*- Path error GlobalSaveInBufferAction
+Выберите строку в редакторе для отката изменений*- Line select error Globalresetchangesaction
+//Ошибки модуля для добавление и убирания строк в изменение предмета
+Откройте редактор для добавления строк в список*- Path error ItemWorkAddLinesAction
+Откройте редактор для добавления массива строк в список*- Path error ItemWorkOkMassiveLineAddAction
+Удалить линии из списка?*- Remove line warning ItemWorkRemoveLinesAction
+Откройте редактор для удаления строк в списке*- Path error ItemWorkRemoveLinesAction
+Откатить изменения в списке?*- Remove line warning ItemWorkResetNumberOfLinesAction
+Открой редактор для отката строк в списке*- Path error ItemWorkResetNumberOfLinesAction
+//Ошибки фабрик и универсальных модулей
+Введите количество строк больше 0*- Add number error AddOrRemoveLines
+Откройте редактор для добавления линий в список*- Path error AddOrRemoveLines
+Напишите что-то перед добавлением в список*- Add number error AddOrRemoveLines
+Откройте редактор для добавление массива в список*- Path error AddOrRemoveLines
+Выберите строки в списке перед удалением*- Remove line(s) number error AddOrRemoveLines
+Выберите строки в редакторе для отката всех изменений в списке*- Reset line(s) number error AddOrRemoveLines
+Список в редакторе пуст, его нельзя сохранить в файл*- List empty error SaveListChangesInFile
+Откройте редактор для сохранения изменений в файл*- Path error SaveListChangesInFile
+//Ошибки приложения
+Отменить выбор каталога игры?
+//
+
+//Write&ReadModules
