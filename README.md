@@ -18,7 +18,8 @@ JRE 9.0.4 download from link, and put package in archive to item editor folder. 
   
   The editor implements:
 1. Changes in the characteristics of item strings in items.json
-1.1 Creating presets for replacing item characteristics
+1.1 Creating presets for replacing item characteristics  
+1.2 Test tag system for search Rounds and Ammo boxes
 3. It is possible to create and load different variations of items through items.json and global server characteristics through globals.json (in settings)
 4. Changes to global characteristics in globals.json (experience, health, etc.)
 5. Changes in location parameters (exit time, boss spawn, etc.)
@@ -54,7 +55,8 @@ JRE 9.0.4 download from link, and put package in archive to item editor folder. 
 
   Редактор реализует:
 1. Изменения характеристик строк предметов в items.json  
-1.1 Создание пресетов по замене характеристик предметов
+1.1 Создание пресетов по замене характеристик предметов  
+1.2 Тестовую систему тегов для поиска патрон и пачек патронов
 3. Имеется возможность создания и загрузки разных вариаций предметов через items.json и глобальных характеристик сервера через globals.json (в настройках)
 4. Изменения глобальных характеристик в globals.json (опыт, здоровье и т.д.)
 5. Изменения параметров локаций (время выхода, спавн босса и т.д.)
