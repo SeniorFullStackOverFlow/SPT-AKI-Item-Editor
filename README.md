@@ -1,4 +1,4 @@
-# SPT-AKI-Item-Editor main
+# SPT-AKI-Item-Editor for SPT-AKI 2.3.1 main information
 https://www.dropbox.com/sh/z7qg6os9w2c5qv2/AADNt5uSKr5c5kyK9NPTuLq5a?dl=0  
 
 JRE 9.0.4 download from link, and put package in archive to item editor folder. */SPT-AKI item editor/jre9.0.4  
