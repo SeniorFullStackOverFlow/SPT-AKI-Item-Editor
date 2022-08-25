@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="Globalpane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.Settings">
+   <children>
+      <ChoiceBox fx:id="languageChangerChoiceBox" layoutX="13.0" layoutY="23.0" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" onMouseReleased="#languageChangerChoiceBoxmousereleased" prefHeight="25.0" prefWidth="150.0" />
+      <ImageView fx:id="languageFlagImageView" fitHeight="41.0" fitWidth="52.0" layoutX="174.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="languageRoflanPepegGpeg" fitHeight="186.0" fitWidth="239.0" layoutX="13.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="languageLabel" alignment="CENTER" layoutX="26.0" layoutY="6.0" maxHeight="17.0" maxWidth="124.0" minHeight="17.0" minWidth="96.0" prefHeight="17.0" prefWidth="124.0" text="Change language" />
+      <Label fx:id="panelanimationLabel" layoutX="13.0" layoutY="82.0" maxHeight="17.0" maxWidth="168.0" minHeight="17.0" minWidth="168.0" prefHeight="17.0" prefWidth="168.0" text="Enable/Disable panel animation" />
+      <RadioButton fx:id="panelanimationMenuAnimationRadioButton" layoutX="13.0" layoutY="106.0" maxHeight="17.0" maxWidth="239.0" minHeight="17.0" minWidth="108.0" mnemonicParsing="false" onAction="#Menuanimationaction" prefHeight="17.0" prefWidth="239.0" text="Menu animation" />
+      <RadioButton fx:id="panelanimationItemsEditorRadioButton" layoutX="13.0" layoutY="131.0" maxHeight="17.0" maxWidth="239.0" minHeight="17.0" minWidth="174.0" mnemonicParsing="false" onAction="#Itemeditoranimationaction" prefHeight="17.0" prefWidth="239.0" text="Items editor panel animation" />
+      <RadioButton fx:id="panelanimationGlobalValueRadioButton" layoutX="13.0" layoutY="155.0" maxHeight="17.0" maxWidth="239.0" minHeight="17.0" minWidth="176.0" mnemonicParsing="false" onAction="#Globalmenuanimationaction" prefHeight="17.0" prefWidth="239.0" text="Global value panel animation" />
+      <RadioButton fx:id="panelanimationItemsStatsRadioButton" layoutX="13.0" layoutY="178.0" maxHeight="17.0" maxWidth="239.0" minHeight="17.0" minWidth="167.0" mnemonicParsing="false" onAction="#Itemsstatspanelanimationaction" prefHeight="17.0" prefWidth="239.0" text="Items stats panel animation" />
+      <Label fx:id="pathToGameLabel" alignment="CENTER" layoutX="289.0" layoutY="7.0" maxHeight="17.0" maxWidth="214.0" minHeight="17.0" minWidth="122.0" prefHeight="17.0" prefWidth="214.0" text="Path to game directory" />
+      <Label fx:id="pathToItemsLabel" alignment="CENTER" layoutX="289.0" layoutY="53.0" maxHeight="17.0" maxWidth="214.0" minHeight="17.0" minWidth="122.0" prefHeight="17.0" prefWidth="214.0" text="Path to items file" />
+      <Label fx:id="pathToDirectioryLabel" alignment="CENTER" layoutX="289.0" layoutY="146.0" maxHeight="17.0" maxWidth="214.0" minHeight="17.0" minWidth="124.0" prefHeight="17.0" prefWidth="214.0" text="Path to save/backup directory" />
+      <Label fx:id="pathToGlobalsLabel" alignment="CENTER" layoutX="289.0" layoutY="100.0" maxHeight="17.0" maxWidth="214.0" minHeight="17.0" minWidth="122.0" prefHeight="17.0" prefWidth="214.0" text="Path to globalvalues file" />
+      <TextField fx:id="pathGameDirectoryTextField" disable="true" layoutX="261.0" layoutY="23.0" prefHeight="25.0" prefWidth="270.0" />
+      <TextField fx:id="pathItemsFileTextField" disable="true" layoutX="261.0" layoutY="70.0" prefHeight="25.0" prefWidth="270.0" />
+      <TextField fx:id="pathGlobalValuesTextField" disable="true" layoutX="261.0" layoutY="117.0" prefHeight="25.0" prefWidth="270.0" />
+      <TextField fx:id="pathBackupTextField" disable="true" layoutX="261.0" layoutY="163.0" prefHeight="25.0" prefWidth="270.0" />
+      <Button fx:id="pathGameDirectorySearchBtn" layoutX="534.0" layoutY="23.0" mnemonicParsing="false" onAction="#pathGameDirectorySearchBtnaction" text="Search" />
+      <Button fx:id="pathItemsFieldSearchBtn" layoutX="534.0" layoutY="70.0" mnemonicParsing="false" onAction="#pathItemsFieldSearchBtnaction" text="Search" />
+      <Button fx:id="pathGlobalValuesSearchBtn" layoutX="534.0" layoutY="117.0" mnemonicParsing="false" onAction="#pathGlobalValuesSearchBtnaction" text="Search" />
+      <Button fx:id="pathBackupDirectorySearchBtn" layoutX="534.0" layoutY="162.0" mnemonicParsing="false" onAction="#pathBackupDirectorySearchBtnaction" text="Search" />
+      <Label fx:id="makefileCategoryItemLabel" layoutX="261.0" layoutY="192.0" maxHeight="17.0" maxWidth="159.0" minHeight="17.0" minWidth="127.0" prefHeight="17.0" prefWidth="159.0" text="Select item category" />
+      <ChoiceBox fx:id="makefileCategoryChoseItemChoiceBox" layoutX="262.0" layoutY="209.0" onMouseClicked="#makefileCategoryChoseItemChoiceBoxClicked" prefWidth="150.0" />
+      <ChoiceBox fx:id="makefileItemsFileChoiseBox" layoutX="262.0" layoutY="288.0" onMouseReleased="#Changefile" prefWidth="150.0" />
+      <Label fx:id="makefileChoseItemLabel" layoutX="263.0" layoutY="270.0" maxHeight="17.0" maxWidth="141.0" minHeight="17.0" minWidth="127.0" prefHeight="17.0" prefWidth="141.0" text="Select copy of item file" />
+      <Button fx:id="makefileMakeNewItemsFileBtn" layoutX="416.0" layoutY="288.0" maxHeight="25.0" maxWidth="97.0" minHeight="25.0" minWidth="90.0" mnemonicParsing="false" onAction="#makefileMakeNewItemsFileBtnaction" prefHeight="25.0" prefWidth="97.0" text="Make new file" />
+      <Button fx:id="makefileDeleteItemsFileBtn" layoutX="518.0" layoutY="288.0" maxHeight="25.0" maxWidth="79.0" minHeight="25.0" minWidth="70.0" mnemonicParsing="false" onAction="#makefileDeleteItemsFileBtn1action" prefHeight="25.0" prefWidth="79.0" text="Delete file" />
+      <TextField fx:id="makefileMakeNewFileTextField" disable="true" layoutX="261.0" layoutY="288.0" maxHeight="25.0" maxWidth="159.0" minHeight="25.0" minWidth="159.0" prefHeight="25.0" prefWidth="159.0" visible="false" />
+      <Button fx:id="makefileApplyBtn" disable="true" layoutX="434.0" layoutY="288.0" maxHeight="25.0" maxWidth="85.0" minHeight="25.0" minWidth="56.0" mnemonicParsing="false" onMousePressed="#Applypressed" prefHeight="25.0" prefWidth="85.0" text="Save new file" visible="false" />
+      <Button fx:id="makefileCloseBtn" disable="true" layoutX="528.0" layoutY="288.0" maxHeight="25.0" maxWidth="62.0" minHeight="25.0" minWidth="52.0" mnemonicParsing="false" onMousePressed="#Cancelpressed" prefHeight="25.0" prefWidth="62.0" text="Cancel" visible="false" />
+      <RadioButton fx:id="makefileCopyOldFileToNewRadioBtn" disable="true" layoutX="346.0" layoutY="326.0" maxHeight="25.0" maxWidth="309.0" minHeight="25.0" minWidth="183.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="252.0" text="Old file characteristics to new" visible="false" />
+      <Button fx:id="exitKey" layoutX="284.0" layoutY="361.0" maxHeight="25.0" maxWidth="33.0" minHeight="25.0" minWidth="33.0" mnemonicParsing="false" onAction="#exitKey" prefHeight="25.0" prefWidth="33.0" text="OK" />
+      <Label fx:id="makefileCategoryItemRestoreLabel" layoutX="434.0" layoutY="192.0" maxHeight="17.0" maxWidth="202.0" minHeight="17.0" minWidth="97.0" prefHeight="17.0" prefWidth="159.0" text="Restore game file" />
+      <Button fx:id="makefileCategoryItemRestoreButton" layoutX="464.0" layoutY="209.0" mnemonicParsing="false" onAction="#makefileCategoryItemRestoreButtonAction" text="Restore game file" />
+      <ChoiceBox fx:id="makefileScndCtgryChsItmChoiceBox" layoutX="262.0" layoutY="241.0" onMouseClicked="#makefileScndCtgryChsItmChoiceBoxClicked" prefWidth="150.0" visible="false" />
+   </children>
+</AnchorPane>
